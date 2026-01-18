@@ -5,7 +5,9 @@ import fs from 'fs';
 import path from 'path';
 
 const router = Router();
-const reportsDir = path.join(process.cwd(), 'src/reports');
+// const reportsDir = path.join(process.cwd(), 'src/reports');
+const reportsDir = '/tmp/reports';
+
 
 if (!fs.existsSync(reportsDir)) fs.mkdirSync(reportsDir, { recursive: true });
 
